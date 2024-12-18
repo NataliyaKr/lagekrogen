@@ -21,8 +21,11 @@ h1 {
   font-style: normal;
 }
 
-.subTitle {
-  width: 337px;
+p {
+  text-align: center;
+}
+
+.sTitle {
   font-size: 20px;
   font-weight: 500;
   font-style: normal;
@@ -45,5 +48,13 @@ h1 {
   div {
     background-color: #c6b2c4;
     opacity: 0.7;
+    height: 40%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .sTitle {
+    font-size: 36px;
   }
 }

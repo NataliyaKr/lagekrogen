@@ -8,7 +8,7 @@ const PageHeader = ({ title, subTitle, headerImg, isHomePage, textInfo }) => {
     >
       <div>
         <h1>{title}</h1>
-        {subTitle && <h2 className={styles.subTitle}>{subTitle}</h2>}
+        {subTitle && <h2 className={styles.sTitle}>{subTitle}</h2>}
         <p>{textInfo}</p>
       </div>
     </header>

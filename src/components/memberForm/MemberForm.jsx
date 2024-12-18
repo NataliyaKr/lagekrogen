@@ -3,6 +3,7 @@ import Modal from "../modal/Modal";
 import Loading from "../loading/Loading";
 import Button from "../button/Button";
 import styles from "./memberForm.module.css";
+import { Link } from "react-router-dom";
 
 const Subscribers = () => {
   const [responsName, setResponsName] = useState("");
@@ -66,20 +67,28 @@ const Subscribers = () => {
               value={inputMessage}
               onChange={(e) => setInputMessage(e.target.value)}
             />
-            <Button buttonText="Bliv medlem nu!" type="submit" />
+            <Button
+              className={styles.formBtn}
+              buttonText="Bliv medlem nu!"
+              type="submit"
+            />
           </form>
         </section>
       )}
 
       {isModalOpen && (
         <Modal onClose={closeModal}>
-          <h2>Tak! {responsName}</h2>
-          <p>Vi er så glade for at du vil være en del af vores kundeklub </p>
-          <p>
-            Tag et kig på din indbakke. Vi har givet dig fri fragt på din næste
-            ordre.
-          </p>
-          <Button buttonText="TIL FORSIDEN" />
+          <div className={styles.formContent}>
+            <h2>Tak {responsName} !</h2>
+            <p>Vi er så glade for at du vil være en del af vores kundeklub </p>
+            <p>
+              Tag et kig på din indbakke. Vi har givet dig fri fragt på din
+              næste ordre.
+            </p>
+            <Link to="/home">
+              <Button buttonText="TIL FORSIDEN" />
+            </Link>
+          </div>
         </Modal>
       )}
     </>

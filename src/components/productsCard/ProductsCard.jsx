@@ -5,7 +5,7 @@ const ProductsCard = ({ card }) => {
   return (
     <figure className={styles.card}>
       {card.discountInPercent > 0 && (
-        <div className={styles.discount}>{card.discountInPercent}</div>
+        <div className={styles.discount}>{card.discountInPercent}%</div>
       )}
       <img src={card.image} alt={card.name} />
       <figcaption className={styles.cardContent}>

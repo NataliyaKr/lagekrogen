@@ -27,3 +27,15 @@
   color: #9478a8;
   margin-bottom: 17px;
 }
+
+@media (min-width: 768px) {
+  .responseContainer {
+    width: 70%;
+  }
+  .textTop {
+    font-size: 15px;
+  }
+  .subText {
+    font-size: 20px;
+  }
+}

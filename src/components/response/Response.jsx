@@ -7,7 +7,6 @@ const Response = () => {
       <div className={styles.response}>
         <SectionHeader
           color="blue"
-          /* className={styles.responseTitle} */
           titleTop="Vores kunder"
           subtitle="udtaler"
         />

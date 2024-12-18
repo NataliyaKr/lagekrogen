@@ -1,0 +1,30 @@
+.question {
+  background-color: #ffffff;
+  color: #355675;
+  padding: 27px;
+  border: 1px solid #355675;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.qIcon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.panel {
+  border-top: 1px solid #355675;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.acText {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: left;
+}

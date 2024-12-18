@@ -15,8 +15,45 @@
 }
 
 .form input[type="email"] {
-  padding: 0.5em;
+  padding: 15px;
   font-size: 1em;
   border: 1px solid #355675;
   border-radius: 25px;
+}
+
+.form input[type="name"] {
+  padding: 15px;
+  font-size: 1em;
+  border: 1px solid #355675;
+  border-radius: 25px;
+}
+
+.form textarea {
+  height: 167px;
+  padding: 15px;
+  font-size: 1em;
+  border: 1px solid #355675;
+  border-radius: 25px;
+}
+
+.formBtn {
+  background-color: #9478a8;
+  color: #ffffff;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.formContent {
+  width: 326px;
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
 }

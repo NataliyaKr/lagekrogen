@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding: 1rem 2rem;
+  padding: 10px 15px;
   background-color: #355675;
 
   img {
@@ -74,26 +74,7 @@
 @media (min-width: 768px) {
   .navbar {
     img {
-      width: 204px;
-    }
-  }
-}
-
-@media (min-width: 1024px) {
-  .burger-menu {
-    display: none;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: 0;
-    background-color: transparent;
-
-    li {
-      padding: 0;
-      margin: 0 1rem;
+      width: 200px;
     }
   }
 }

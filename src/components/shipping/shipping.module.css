@@ -1,0 +1,17 @@
+.shipping {
+  font-size: 11px;
+  color: #355675;
+  text-align: center;
+  padding: 8px;
+}
+
+.shippingBox {
+  background-color: #d7e6ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shippingIcon {
+  color: #355675;
+}

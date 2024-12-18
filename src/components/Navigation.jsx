@@ -13,8 +13,7 @@ const Navigation = () => {
 
   return (
     <nav className="navbar">
-      {!isOpen && <img className="logo" src={logo} alt="legekrogen_logo" />}
-
+      <img className="logo" src={logo} alt="legekrogen_logo" />
       <div className="burger-menu" onClick={toggleMenu}>
         {isOpen ? (
           <IoClose size={47} />
@@ -24,7 +23,10 @@ const Navigation = () => {
           </div>
         )}
       </div>
-      <ul className={isOpen ? "nav-links open" : "nav-links"}>
+      <ul
+        onClick={toggleMenu}
+        className={isOpen ? "nav-links open" : "nav-links"}
+      >
         <li>
           <NavLink to="/">Forside</NavLink>
         </li>
@@ -32,13 +34,10 @@ const Navigation = () => {
           <NavLink to="/products">Producter</NavLink>
         </li>
         <li>
-          <NavLink to="">FAQ</NavLink>
+          <NavLink to="/faq">FAQ</NavLink>
         </li>
         <li>
-          <NavLink to="/">Kundeklubben</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact">Backoffice</NavLink>
+          <NavLink to="/customer">Kundeklubben</NavLink>
         </li>
       </ul>
     </nav>

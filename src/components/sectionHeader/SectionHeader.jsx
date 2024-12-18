@@ -1,10 +1,16 @@
 import styles from "./sectionHeader.module.css";
 
-const SectionHeader = ({ title, subtitle }) => {
+const SectionHeader = ({ titleTop, subtitle, color = "white" }) => {
   return (
     <header className={styles.header}>
-      <h4>{title}</h4>
-      <h2>{subtitle}</h2>
+      <div>
+        <h4 style={color === "blue" ? { color: "#355675" } : null}>
+          {titleTop}
+        </h4>
+        <h2 style={color === "blue" ? { color: "#355675" } : null}>
+          {subtitle}
+        </h2>
+      </div>
     </header>
   );
 };

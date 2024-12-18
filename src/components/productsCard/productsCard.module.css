@@ -1,0 +1,52 @@
+.card {
+  background-color: #f7f7f7;
+  color: #ffffff;
+  border-radius: 17px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(85, 81, 81, 0.15);
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 17px 17px 0 0;
+}
+
+.cardContent {
+  background-color: #9478a8;
+  padding: 20px;
+}
+
+.cardTitle {
+  font-size: 24px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  margin: 12px 0;
+}
+
+.cardDescription {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.cardPrice {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.discount {
+  background-color: aqua;
+}

@@ -1,13 +1,12 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   position: relative;
   padding: 1rem 2rem;
   background-color: #355675;
 
   img {
-    width: 100px;
+    width: 137px;
   }
 }
 
@@ -16,26 +15,23 @@
   font-size: 2rem;
   color: #ffffff;
   display: flex;
-  align-items: center;
   z-index: 300;
   justify-content: flex-end;
 }
 
 .nav-links {
-  /* display: flex; */
   list-style: none;
   display: none;
   flex-direction: column;
   position: fixed;
-  justify-content: center;
   z-index: 200;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #17e379;
-  padding-top: 0;
+  background-color: #355675;
+  padding-top: 100px;
   margin: 0;
-  height: 120vh;
+  min-height: 100vh;
 
   &.open {
     display: flex;
@@ -50,6 +46,8 @@
       text-decoration: none;
       display: block;
       position: relative;
+      font-size: 36px;
+      font-family: "Quicksand", serif;
 
       &:hover {
         color: #c1aece;
@@ -74,19 +72,23 @@
 }
 
 @media (min-width: 768px) {
+  .navbar {
+    img {
+      width: 204px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
   .burger-menu {
     display: none;
-  }
-
-  .logo {
-    display: block;
   }
 
   .nav-links {
     display: flex;
     flex-direction: row;
-    position: static;
     width: auto;
+    height: 0;
     background-color: transparent;
 
     li {

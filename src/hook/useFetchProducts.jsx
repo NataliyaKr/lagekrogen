@@ -11,7 +11,7 @@ const useFetchProducts = () => {
       const response = await fetch("https://legekrogen.webmcdm.dk/products");
       const data = await response.json();
       console.log(data);
-      setProducts(data.products);
+      setProducts(data);
     } catch (error) {
       setError(error.message);
     } finally {
@@ -19,10 +19,12 @@ const useFetchProducts = () => {
     }
   };
 
+  let recommended = products.filter((p) => p.recommended === true);
+  console.log(recommended);
   useEffect(() => {
     fetchProducts();
   }, []);
-  return { products, error, isLoading };
+  return { products, error, isLoading, recommended };
 };
 
 export default useFetchProducts;

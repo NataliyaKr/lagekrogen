@@ -1,0 +1,33 @@
+.member {
+  background-color: #d7e6ed;
+  padding: 68px 32px;
+  text-align: center;
+  align-items: center;
+}
+
+.memberTitle {
+  font-size: 16px;
+  color: #355675;
+  width: 282px;
+  margin: 0 auto;
+}
+
+.memberSubTitle {
+  font-family: "Square Peg", serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: #355675;
+  margin-bottom: 10px;
+}
+
+.memberBtn {
+  background-color: #355675;
+  color: #ffffff;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  width: 326px;
+  text-transform: uppercase;
+}

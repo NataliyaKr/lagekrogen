@@ -1,0 +1,35 @@
+.footerContainer {
+  background-color: #355675;
+}
+
+.footerContent {
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  padding: 68px 32px;
+}
+
+.footerTitle {
+  font-family: "Square Peg", serif;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.footerContact {
+  font-family: "Quicksand", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.footerRight {
+  font-family: "Quicksand", serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footerIcon {
+  width: 30px;
+}

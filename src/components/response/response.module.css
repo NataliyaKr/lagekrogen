@@ -1,0 +1,29 @@
+.response {
+  padding: 50px 25px;
+}
+
+.responseTitle {
+  color: #355675;
+}
+
+.responseContainer {
+  background-color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
+.textTop {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 12px;
+  color: #355675;
+  margin-bottom: 17px;
+  letter-spacing: 0.1em;
+}
+
+.subText {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 12px;
+  color: #9478a8;
+  margin-bottom: 17px;
+}
